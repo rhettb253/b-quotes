@@ -12,9 +12,8 @@ function App() {
         quote: "Quote: " + e.target.quote.value,
         context: "Context: " + e.target.context.value,
       };
-      let url = "http://localhost:3001/";
       axios
-        .post(url, formOBJ)
+        .post(process.env.REACT_APP_URL, formOBJ)
         .then((res) => console.log(res.data))
         .catch((err) => console.error("Error: " + err.message));
 
