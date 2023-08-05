@@ -11,7 +11,7 @@
 }
 
 main {
-  padding: 5% 25%;
+  padding: 5% 20%;
 }
 
 h2 {
@@ -60,4 +60,16 @@ button:hover {
 
 .previousSubs p {
   margin: 0.5rem 0;
+}
+
+@media (max-width: 800px) {
+  main{
+    padding: 5% 15%;
+  }
+}
+
+@media (max-width: 600px) {
+  main{
+    padding: 5% 5%;
+  }
 }
